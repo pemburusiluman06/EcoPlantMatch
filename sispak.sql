@@ -72,12 +72,12 @@ INSERT INTO cahaya( kode_cahaya, jenis_cahaya, keterangan) VALUES
 
 CREATE TABLE curah_hujan(
 id_curah_hujan INT AUTO_INCREMENT PRIMARY KEY,
-kode_hujan VARCHAR(20) NOT NULL,
+kode_curah_hujan VARCHAR(20) NOT NULL,
 jenis_curah_hujan VARCHAR(50) NOT NULL,
 keterangan TEXT DEFAULT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO curah_hujan(kode_hujan, jenis_curah_hujan, keterangan) VALUES
+INSERT INTO curah_hujan(kode_curah_hujan, jenis_curah_hujan, keterangan) VALUES
 ('H0001', 'Tinggi', 'Tinggi (300 – 500 mm)'),
 ('H0002', 'Sedang', 'Sedang ( 100 – 300 mm)'),
 ('H0003', 'Rendah', 'Rendah ( < 200 mm)');
