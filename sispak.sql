@@ -94,11 +94,6 @@ INSERT INTO ketinggian_tanah(kode_ketinggian, jenis_ketinggian_tanah, keterangan
 ('K0002', 'Sedang', 'Sedang (700-1000mdpl)'),
 ('K0003', 'Rendah', 'Rendah (1000-1500mdpl)');
 
-CREATE TABLE hasil(
-id_hasil INT AUTO_INCREMENT PRIMARY KEY,
-saran VARCHAR(250) NOT NULL
-)ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 CREATE TABLE relasi_jenis_tanah (
   kode_tanaman VARCHAR(50) NOT NULL,
   kode_tanah VARCHAR(50) NOT NULL,
