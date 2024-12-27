@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HasilController">
+    <children>
+        <Label fx:id="cahaya" layoutX="282.0" layoutY="83.0" text="cahaya" />
+        <Label fx:id="ketinggian" layoutX="282.0" layoutY="118.0" text="Ketinggian" />
+        <Label fx:id="suhu" layoutX="282.0" layoutY="155.0" text="suhu" />
+        <Label fx:id="tanah" layoutX="281.0" layoutY="48.0" text="tanah" />
+        <Button fx:id="homeBtn" layoutX="274.0" layoutY="295.0" mnemonicParsing="false" text="Home" />
+    </children>
+</AnchorPane>
