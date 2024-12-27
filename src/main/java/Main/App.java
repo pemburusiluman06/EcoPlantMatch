@@ -11,7 +11,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        var parent = FXMLLoader.load(getClass().getResource("/fxml/InferenceView.fxml"));
+        var parent = FXMLLoader.load(getClass().getResource("/UI/Home.fxml"));
         Scene scene;
         scene = new Scene((Parent) parent);
         stage.setScene(scene);
