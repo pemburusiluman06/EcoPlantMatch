@@ -1,6 +1,6 @@
-CREATE DATABASE SistempakarDB;
+CREATE DATABASE IF NOT EXISTS ecoplantmatchDB;
 
-USE SistempakarDB;
+USE ecoplantmatchDB;
 
 CREATE TABLE tanaman (
 id_tanaman INT AUTO_INCREMENT PRIMARY KEY,
@@ -11,25 +11,25 @@ keterangan TEXT DEFAULT NULL
 
 INSERT INTO tanaman (kode_tanaman, nama_tanaman, keterangan) VALUES
 ('B0001','Jeruk', 'Tanaman jeruk cocok ditanam hampir semua jenis tanah kecuali kapur, tanaman jeruk juga membutuhkan cahaya matahari yang cukup dan cocok di tanam di daerah dengan curah hujan yang cukup rendah. 
-Tanaman jeruk direkomendasikan ditanam di ketinggian tanah 700-1000 mdpl dan membutuhkan suhu yang dingin agar bisa tumbuh dengan baik, dan pemberian pupuk kandang sapi adalah pupuk yang cocok untuk jeruk'),
+Tanaman jeruk direkomendasikan ditanam di ketinggian tanah 700-1000 mdpl dan membutuhkan suhu yang dingin agar bisa tumbuh dengan baik'),
 ('B0002', 'Stroberi', 'Tanaman stroberi cocok ditanam hampir semua jenis tanaman kecuali tanah berjenis kapur, tanaman stroberi membutuhkan cahaya matahari yang cukup, dan cocok di tempat dengan curah hujan yang tinggi.
- Tanaman stroberi direkomendasikan ditanam di ketinggian 1000-1500 mdpl dan membutuhkan suhu yang dingin, agar stroberi bisa lebih subur dapat menggunakan pupuk kandang sapi'),
+ Tanaman stroberi direkomendasikan ditanam di ketinggian 1000-1500 mdpl dan membutuhkan suhu yang dingin'),
 ('B0003', 'Tomat', 'Tanaman tomat cocok hampir di semua jenis tanah kecuali di tanah jenis kapur, tanaman tomat membutuhkan cahaya matahari yang cukup dan cocok di daerah dengan curah hujan yang cukup rendah.
-Tanaman tomat direkomendasikan ditanam di ketinggian 600 - 700 mdpl dan membutuhkan suhu yang cukup dingin, tanaman tomat cocok menggunakan pupuk kandang sapi agar bisa lebih subur'),
+Tanaman tomat direkomendasikan ditanam di ketinggian 600 - 700 mdpl dan membutuhkan suhu yang cukup dingin'),
 ('B0004', 'Cabe','Tanaman cabe cocok hampir di semua jenis tanah kecuali di tanah berjenis kapur, tanaman cabe membutuhkan cahaya matahari yang cukup dan cocok di daerah dengan curah hujan yang rendah.
-Tanaman cabe direkomendasikan ditanam di ketinggian 600 - 700 mdpl dan membutuhkan suhu yang cukup dingin, tanaman tomat cabe cocok menggunakan pupuk kandang sapi agar bisa lebih subur'),
+Tanaman cabe direkomendasikan ditanam di ketinggian 600 - 700 mdpl dan membutuhkan suhu yang cukup dingin'),
 ('B0005', 'Apel', 'Tanaman apel cocok hampir di semua jenis tanah kecuali di tanah berjenis kapur, tanaman apel membutuhkan cahaya matahari yang cukup dan cocok di daerah dengan curah hujan yang rendah.
-Tanaman apel direkomendasikan ditanam di ketinggian 1000 - 1500 mdpl dan membutuhkan suhu yang cukup dingin, tanaman apel cocok menggunakan pupuk kandang sapi agar bisa lebih subur '),
+Tanaman apel direkomendasikan ditanam di ketinggian 1000 - 1500 mdpl dan membutuhkan suhu yang cukup dingin'),
 ('B0006', 'Markisa', 'Tanaman  markisa cocok ditanam hampir semua jeis tanah kecuali tanah berjenis kapur, tanaman markisa membutuhkan cahaya matahari yang cukup dan cocok di daerah dengan curah hujan yang rendah.
-Tanaman apel direkomendasikan ditanam di ketinggian 600 - 700 mdpl dan membutuhkan suhu yang cukup dingin, tanaman markisa cocok menggunakan pupuk kandang sapi agar bisa lebih subur'),
+Tanaman apel direkomendasikan ditanam di ketinggian 600 - 700 mdpl dan membutuhkan suhu yang cukup dingin'),
 ('B0007', 'Lemon', 'Tanaman lemon cocok ditanam hampir semua jenis tanah kecuali tanah jenis kapur, tanaman lemon membutuhkan cahaya matahari yang cukup dan cocok di daerah dengan curah hujan yang tinggi.
-Tanaman lemon direkomendasikan ditanam di ketinggian 700 - 1000 mdpl dan membutuhkan suhu yang cukup dingin, tanaman lemon cocok menggunakan pupuk kandang sapi agar lebih subur '),
+Tanaman lemon direkomendasikan ditanam di ketinggian 700 - 1000 mdpl dan membutuhkan suhu yang cukup dingin'),
 ('B0008', 'Aprikot', 'Tanaman aprikot cocok ditanam hampir semua jenis tanah kecuali tanah jenis kapur, tanaman aprikot membutuhkan cahaya matahari yang cukup dan cocok di daerah dengan curah hujan yang tinggi.
-Tanaman aprikot direkomendasikan ditanam di ketinggian 700 - 1000 mdpl dan membutuhkan suhu yang cukup dingin, tanaman aprikot cocok menggunakan pupuk kandang sapi agar lebih subur ' ),
+Tanaman aprikot direkomendasikan ditanam di ketinggian 700 - 1000 mdpl dan membutuhkan suhu yang cukup dingin' ),
 ('B0009', 'Raspberry', 'Tanaman rapsberry cocok ditanam hampir di semua jenis tanah kecuali tanah jenis kapur, tanaman rapsbery membutuhkan cahaya matahari yang cukup dan cocok di daerah dengan curah hujan yang tinggi.
-Tanaman rapsberry direkomendasikan ditanam di ketinggian 1000 - 1500 mdpl dan membuthkan suhu yang cukup dingin, tanaman rapsbeey cocok menggunakan pupuk kandang sapi agar lebih subur '),
+Tanaman rapsberry direkomendasikan ditanam di ketinggian 1000 - 1500 mdpl dan membuthkan suhu yang cukup dingin'),
 ('B0010', 'Timun' ,'Tanaman timun cocok ditanam hampir di semua jenis tanah kecuali tanah jenis kapur, tanaman timun sangat membutuhkan cahaya matahari dan cocok di daerah dengan curah hujan yang rendah.
-Tanaman timun direkomendasikan ditanam di ketinggian 700 - 1000 mdpl dan membutuhkan suhu yang cukup dingin, tanaman lemon cocok menggunakan pupuk kandang sapi agar lebih subur ');
+Tanaman timun direkomendasikan ditanam di ketinggian 700 - 1000 mdpl dan membutuhkan suhu yang cukup dingin');
 
 CREATE TABLE jenis_tanah (
 id_tanah INT AUTO_INCREMENT PRIMARY KEY,
@@ -65,7 +65,7 @@ jenis_cahaya VARCHAR(50) NOT NULL,
 keterangan TEXT DEFAULT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO cahaya( jenis_cahaya, keterangan) VALUES
+INSERT INTO cahaya( kode_cahaya, jenis_cahaya, keterangan) VALUES
 ('C0001', 'Terkena cahaya dengan sempurna', 'Terkena pencahayaan dari matahari dengan baik'),
 ('C0002', 'Cahaya sedikit terhalang', 'Terkena pencahayaan dari matahari tetapi terhalang oleh benda lain'),
 ('C0003', 'Cahaya sangat terhalang', 'Tidak terkena pencahayaan sama sekali dari matahari');
@@ -93,18 +93,6 @@ INSERT INTO ketinggian_tanah(kode_ketinggian, jenis_ketinggian_tanah, keterangan
 ('K0001', 'Tinggi', 'Tinggi (1000-1500mdpl)'),
 ('K0002', 'Sedang', 'Sedang (700-1000mdpl)'),
 ('K0003', 'Rendah', 'Rendah (1000-1500mdpl)');
-
-CREATE TABLE pupuk(
-id_pupuk INT AUTO_INCREMENT PRIMARY KEY,
-kode_pupuk VARCHAR(20) NOT NULL,
-jenis_pupuk VARCHAR(25) NOT NULL,
-keterangan TEXT DEFAULT NULL
-)ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-INSERT INTO pupuk(kode_pupuk, jenis_pupuk, keterangan) VALUES
-('P0001', 'Pupuk hijau', 'Pupuk hijau merupakan pupuk organik yang berwarna hijau dan memiliki Berasal dari tanaman atau sisa panen'),
-('P0002', 'Pupuk kandang sapi', 'Pupuk kandang sapi merupakan pupuk organik yang berasal dari limbah peternakan sapi, seperti feses dan urine'),
-('P0003', 'Pupuk kandang ayam', 'Pupuk kandang ayam biasanya diambil dalam bentuk campuran dengan sekam padi, terutama untuk kotoran ayam pedaging (broiler)');
 
 CREATE TABLE hasil(
 id_hasil INT AUTO_INCREMENT PRIMARY KEY,
@@ -224,7 +212,7 @@ CREATE TABLE relasi_jenis_cahaya (
   nilai FLOAT NOT NULL
   ); 
   
-  INSERT INTO relasi_jenis_cahaya(kode_cahaya, nilai) VALUES
+  INSERT INTO relasi_jenis_cahaya(kode_tanaman, kode_cahaya, nilai) VALUES
   ('B0001','C0001',0.2),
   ('B0002','C0001',0.1),
   ('B0003','C0001',0.3),
@@ -293,41 +281,3 @@ INSERT INTO relasi_ketinggian_tanah (kode_tanaman, kode_ketinggian, nilai) VALUE
   ('B0008','K0003',0.1),
   ('B0009','K0003',0.85),
   ('B0010','K0003',0.1);
-
-CREATE TABLE relasi_tanaman_pupuk(
-kode_tanaman VARCHAR(25) NOT NULL,
-kode_pupuk VARCHAR(25) NOT NULL,
-nilai FLOAT NOT NULL
-)ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-INSERT INTO relasi_tanaman_pupuk(relasi_tanaman_pupuk_id, jenis_pupuk_id, nilai) VALUES
-  ('B0001','P0001',0.5),
-  ('B0002','P0001',0.1),
-  ('B0003','P0001',0.15),
-  ('B0004','P0001',0.1),
-  ('B0005','P0001',0.1),
-  ('B0006','P0001',0.5),
-  ('B0007','P0001',0.5),
-  ('B0008','P0001',0.5),
-  ('B0009','P0001',0.1),
-  ('B0010','P0001',0.5),
-  ('B0001','P0002',0.8),
-  ('B0002','P0002',0.75),
-  ('B0003','P0002',0.75),
-  ('B0004','P0002',0.7),
-  ('B0005','P0002',0.7),
-  ('B0006','P0002',0.8),
-  ('B0007','P0002',0.85),
-  ('B0008','P0002',0.8),
-  ('B0009','P0002',0.85),
-  ('B0010','P0002',0.85),
-  ('B0001','P0003',0.15),
-  ('B0002','P0003',0.15),
-  ('B0003','P0003',0.1),
-  ('B0004','P0003',0.2),
-  ('B0005','P0003',0.2),
-  ('B0006','P0003',0.15),
-  ('B0007','P0003',0.10),
-  ('B0008','P0003',0.15),
-  ('B0009','P0003',0.5),
-  ('B0010','P0003',0.1);
