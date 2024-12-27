@@ -29,7 +29,7 @@ public class PilihSuhuController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
         lanjutBtn.setOnAction((ActionEvent event) -> {
-            Fungsi.ChangeScene(event, "/UI/Hasil.fxml", "Hasil");
+            Fungsi.ChangeScene(event, "/UI/PilihCurahHujan.fxml", "Hasil");
         });
 
         kembaliBtn.setOnAction((ActionEvent event) -> {
