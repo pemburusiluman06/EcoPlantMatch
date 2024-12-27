@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import DAO.CahayaDAO;
+import DAO.CurahHujanDAO;
 import DAO.JenisTanahDAO;
 import DAO.KetinggianDAO;
 import DAO.SuhuDAO;
@@ -24,6 +25,8 @@ public class HasilController implements Initializable {
     @FXML
     private Label tanah;
     @FXML
+    private Label curahHujan;
+    @FXML
     private Button homeBtn;
 
     @Override
@@ -37,6 +40,7 @@ public class HasilController implements Initializable {
         ketinggian.setText(KetinggianDAO.ketinggian);
         suhu.setText(SuhuDAO.suhu);
         tanah.setText(JenisTanahDAO.jenisTanah);
+        curahHujan.setText(CurahHujanDAO.curahHujan);
     }    
     
 }

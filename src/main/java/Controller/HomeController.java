@@ -15,7 +15,7 @@ public class HomeController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
     MulaiBtn.setOnAction((ActionEvent event) -> {
-        Fungsi.ChangeScene(event, "/UI/JenisTanah.fxml", "SistemPakar");
+        Fungsi.ChangeScene(event, "/UI/PilihJenisTanah.fxml", "SistemPakar");
     });
     }    
 }

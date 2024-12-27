@@ -10,7 +10,7 @@ import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import DAO.JenisTanahDAO;
 
-public class JenisTanahController implements Initializable {
+public class PilihJenisTanahController implements Initializable {
 
     @FXML
     private MenuButton jenisTanahBtn;

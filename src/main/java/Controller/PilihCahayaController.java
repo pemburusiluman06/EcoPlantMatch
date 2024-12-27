@@ -33,7 +33,7 @@ public class PilihCahayaController implements Initializable {
         });
 
         kembaliBtn.setOnAction((ActionEvent event) -> {
-            Fungsi.ChangeScene(event, "/UI/JenisTanah.fxml", "Sistem Pakar");
+            Fungsi.ChangeScene(event, "/UI/PilihJenisTanah.fxml", "Sistem Pakar");
         });
 
         for (MenuItem item : pilihCahayaBtn.getItems()) {

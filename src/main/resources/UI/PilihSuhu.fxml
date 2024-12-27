@@ -12,7 +12,6 @@
         <MenuButton fx:id="pilihSuhuBtn" layoutX="251.0" layoutY="156.0" mnemonicParsing="false" text="Klik Di sini ">
             <items>
                 <MenuItem fx:id="panas" mnemonicParsing="false" text="Panas" />
-                <MenuItem fx:id="sedang" mnemonicParsing="false" text="Sedang" />
                 <MenuItem fx:id="dingin" mnemonicParsing="false" text="Dingin" />           
             </items>
         </MenuButton>
