@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import DAO.JenisTanahDAO;
+import javafx.scene.control.Alert;
 
 public class PilihJenisTanahController implements Initializable {
 
@@ -37,7 +38,14 @@ public class PilihJenisTanahController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
         lanjutBtn.setOnAction((ActionEvent event) -> {
-            Fungsi.ChangeScene(event, "/UI/PilihCahaya.fxml", "Sistem Pakar");
+            if (JenisTanahDAO.jenisTanah == null) {
+                System.out.println("Please fill in all information");
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setContentText("Anda belum memilh jenis tanahnya");
+                alert.show();
+            } else {
+                Fungsi.ChangeScene(event, "/UI/PilihCahaya.fxml", "Sistem Pakar");
+            }
         });
 
         kembaliBtn.setOnAction((ActionEvent event) -> {

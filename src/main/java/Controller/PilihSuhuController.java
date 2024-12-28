@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import DAO.SuhuDAO;
+import javafx.scene.control.Alert;
 
 public class PilihSuhuController implements Initializable {
 
@@ -29,7 +30,14 @@ public class PilihSuhuController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
         lanjutBtn.setOnAction((ActionEvent event) -> {
-            Fungsi.ChangeScene(event, "/UI/PilihCurahHujan.fxml", "Hasil");
+            if (SuhuDAO.suhu == null) {
+                System.out.println("Please fill in all information");
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setContentText("Anda belum memilh suhunya");
+                alert.show();
+            } else {
+                Fungsi.ChangeScene(event, "/UI/PilihCurahHujan.fxml", "Hasil");
+            }
         });
 
         kembaliBtn.setOnAction((ActionEvent event) -> {
