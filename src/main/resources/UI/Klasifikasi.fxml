@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/styles/klasifikasi.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: transparant; -fx-border-color: #797979; -fx-border-width: 0 0 2 0;">
+         <children>
+            <Button fx:id="KlasifikasiBtn" layoutX="675.0" layoutY="18.0" mnemonicParsing="false" onAction="#GoToKlasifiaksi" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: transparant;" text="Klasifikasi" textFill="#513939">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="homeBtn" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#GoToStart" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: transparant;">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="200.0">
+                     <image>
+                        <Image url="@../../../../../../../../Downloads/logo%20Ecoplant.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <ScrollPane layoutY="70.0" prefHeight="430.0" prefWidth="800.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="999.0" prefWidth="800.0">
+               <children>
+                  <Pane accessibleRole="TEXT" layoutY="-1.0" prefHeight="992.0" prefWidth="783.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e9ffc5" height="41.0" layoutX="93.0" layoutY="61.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="200.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e9ffc5" height="41.0" layoutX="493.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="200.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e9ffc5" height="41.0" layoutX="280.0" layoutY="245.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="223.0" />
+                        <Text fx:id="teks1" fill="#542828" layoutX="278.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ketinggian Lingkungan" textAlignment="CENTER" wrappingWidth="226.13671875">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#542828" layoutX="480.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suhu Udara" textAlignment="CENTER" wrappingWidth="226.13671875">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#542828" layoutX="80.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ph Tanah" textAlignment="CENTER" wrappingWidth="226.13671875">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="168.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.0 - 6.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="168.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6.0 - 6.5">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="168.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6.5 - 7.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="168.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7.0 - 7.5">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="545.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dingin : 15 - 25 °C" />
+                        <Text layoutX="545.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panas : 30 - 38 °C" />
+                        <Text layoutX="315.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendah : 500 - 700 Mdpl">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="311.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sedang : 700 - 1000 Mdpl">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="312.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tinggi : 1000 - 1500 Mdpl">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e9ffc5" height="41.0" layoutX="280.0" layoutY="464.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="223.0" />
+                        <Text fx:id="teks11" fill="#542828" layoutX="278.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Tanah" textAlignment="CENTER" wrappingWidth="226.13671875">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="377.0" fitWidth="695.0" layoutX="43.0" layoutY="548.0">
+                           <image>
+                              <Image url="@../com/example/demo/asset/jenis-tanah-menurut-klasifikasi-usda-03.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

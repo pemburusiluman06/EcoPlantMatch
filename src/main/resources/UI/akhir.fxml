@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/styles/akhir.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="800.0">
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="TabelRekomen" layoutX="60.0" layoutY="153.0" prefHeight="241.0" prefWidth="681.0">
+                    <columns>
+                      <TableColumn fx:id="No" prefWidth="47.0" text="No" />
+                      <TableColumn fx:id="JenisVeg" prefWidth="139.0" text="Jenis Vegetasi" />
+                        <TableColumn fx:id="KetVeg" minWidth="0.0" prefWidth="283.0" text="Keterangan" />
+                        <TableColumn fx:id="SaranTanam" prefWidth="211.0" text="Saran Penanaman" />
+                    </columns>
+                  </TableView>
+                  <Text fill="#36863a" layoutX="240.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hasil Rekomendasi">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+         </center>
+         <top>
+            <Pane prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: transparant; -fx-border-color: #797979; -fx-border-width: 0 0 2 0;" styleClass="mainFxmlClass" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="BackToStartBtn" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: transparant;">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="200.0">
+                           <image>
+                              <Image url="@../com/example/demo/asset/logo%20Ecoplant.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="Klasifikasi5Btn" layoutX="691.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: transparant;" text="Klasifikasi" textFill="#513939">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
