@@ -9,9 +9,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StartController">
     <stylesheets>
-        <URL value="@/styles/home.css" />
+        <URL value="@../Style/homepage.css" />
     </stylesheets>
    <children>
       <Pane layoutX="18.0" layoutY="96.0" prefHeight="282.0" prefWidth="765.0" style="-fx-background-color: #F0FFB1; -fx-background-radius: 20;">
@@ -34,12 +34,12 @@
       </ImageView>
       <Pane fx:id="Pane" prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: transparant; -fx-border-color: #797979; -fx-border-width: 0 0 2 0;">
          <children>
-            <Button fx:id="startKlasifikasibtn" layoutX="637.0" layoutY="22.0" mnemonicParsing="false" onAction="#GoToKlasifiksai" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: transparant;" text="Klasifikasi" textFill="#513939">
+            <Button fx:id="startKlasifikasibtn" layoutX="637.0" layoutY="22.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: transparant;" text="Klasifikasi" textFill="#513939">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Button>
-            <Button fx:id="homeBtn" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#GoToStart" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparant;">
+            <Button fx:id="homeBtn" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparant;">
                <graphic>
                   <ImageView fitHeight="33.0" fitWidth="200.0">
                      <image>
@@ -60,7 +60,7 @@
             <Image url="@../Asset/10.png" />
          </image>
       </ImageView>
-      <Button fx:id="StartBtn" layoutX="37.0" layoutY="423.0" mnemonicParsing="false" onAction="#GoToPertanyaan1" prefHeight="42.0" prefWidth="245.0" style="-fx-background-color: #FFB000; -fx-background-radius: 15;" text="Temukan rekomendasi vegetasi" textFill="WHITE">
+      <Button fx:id="StartBtn" layoutX="37.0" layoutY="423.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="245.0" style="-fx-background-color: #FFB000; -fx-background-radius: 15;" text="Temukan rekomendasi vegetasi" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
