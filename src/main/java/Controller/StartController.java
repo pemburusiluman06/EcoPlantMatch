@@ -27,6 +27,12 @@ public class StartController implements Initializable {
         StartBtn.setOnAction((ActionEvent event) -> {
         Fungsi.ChangeScene(event, "/UI/Pertanyaan1.fxml", "SistemPakar");
     });
+        startKlasifikasibtn.setOnAction((ActionEvent event) -> {
+            Fungsi.ChangeScene(event, "/UI/Klasifikasi.fxml", "SistemPakar");
+        });
+        homeBtn.setOnAction((ActionEvent event) -> {
+            Fungsi.ChangeScene(event, "/UI/Start.fxml", "SistemPakar");
+        });
     }    
     
 }

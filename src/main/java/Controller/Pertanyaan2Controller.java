@@ -39,6 +39,12 @@ public class Pertanyaan2Controller implements Initializable {
         KetinggianBtn.setOnAction((ActionEvent event) -> {
             Fungsi.ChangeScene(event, "/UI/Pertanyaan3.fxml", "SistemPakar");
         });
+        KlasifikasiBtn2.setOnAction((ActionEvent event) -> {
+            Fungsi.ChangeScene(event, "/UI/Klasifikasi.fxml", "SistemPakar");
+        });
+        homeBtn2.setOnAction((ActionEvent event) -> {
+            Fungsi.ChangeScene(event, "/UI/Start.fxml", "SistemPakar");
+        });
      }
      
      private void getKetinggian(ActionEvent t) {
@@ -47,37 +53,5 @@ public class Pertanyaan2Controller implements Initializable {
 
 
     }
-
-
-
-    @FXML
-    void GoToKlasifikasi(ActionEvent event) {
-    navigateToPage(event, "/fxml/Klasifikasi.fxml");
-    }
-
-    @FXML
-    void GoToPertanyaan3(ActionEvent event) {
-     navigateToPage(event, "/fxml/pertanyaan3.fxml");
-    }
-
-    @FXML
-    void GoTohomePage(ActionEvent event) {
-    navigateToPage(event, "/fxml/Start.fxml");
-    }
-
-    private void navigateToPage(ActionEvent event, String fxmlPath) {
-    try {
-        // Memuat file FXML berdasarkan path yang diberikan
-        Parent root = FXMLLoader.load(getClass().getResource(fxmlPath));
-        // Mendapatkan stage dari event saat ini
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        // Mengatur scene baru dengan file FXML yang dimuat
-        stage.setScene(new Scene(root));
-        stage.show();
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
-}
-
 
 }

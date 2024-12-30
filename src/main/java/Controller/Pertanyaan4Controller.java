@@ -40,6 +40,12 @@ public class Pertanyaan4Controller implements Initializable {
         hasilBtn.setOnAction((ActionEvent event) -> {
             Fungsi.ChangeScene(event, "/UI/akhir.fxml", "SistemPakar");
         });
+         KlasifikasiBtn4.setOnAction((ActionEvent event) -> {
+             Fungsi.ChangeScene(event, "/UI/Klasifikasi.fxml", "SistemPakar");
+         });
+         homeBtn4.setOnAction((ActionEvent event) -> {
+             Fungsi.ChangeScene(event, "/UI/Start.fxml", "SistemPakar");
+         });
      }
      
       private void getSuhu(ActionEvent t) {
@@ -47,20 +53,6 @@ public class Pertanyaan4Controller implements Initializable {
          System.out.println("Suhu yang di pilih: " + selectedSuhu);
     }
 
-    @FXML
-    void GoToAkhir(ActionEvent event) {
-    navigateToPage(event, "/fxml/akhir.fxml");
-    }
-
-    @FXML
-    void GoToHomePage(ActionEvent event) {
-    navigateToPage(event, "/fxml/homePage.fxml");
-
-    }
-
-    @FXML
-    void GoToKlasifikasi(ActionEvent event) {
-    navigateToPage(event, "/fxml/Klasifikasi.fxml");
 
     }
 
@@ -74,4 +66,4 @@ public class Pertanyaan4Controller implements Initializable {
         stage.setScene(new Scene(root));
         stage.show();
     } catch (IOException e) {
-        e.printStackTrace();}}}
+        e.printStackTrace();}}

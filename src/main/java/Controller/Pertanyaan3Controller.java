@@ -38,6 +38,12 @@ public class Pertanyaan3Controller implements Initializable {
      PhBtn.setOnAction((ActionEvent event) -> {
             Fungsi.ChangeScene(event, "/UI/Pertanyaan4.fxml", "SistemPakar");
         });
+     KlasifikasiBtn3.setOnAction((ActionEvent event) -> {
+             Fungsi.ChangeScene(event, "/UI/Klasifikasi.fxml", "SistemPakar");
+         });
+     homeBtn3.setOnAction((ActionEvent event) -> {
+             Fungsi.ChangeScene(event, "/UI/Start.fxml", "SistemPakar");
+         });
      }
      
      private void getPh(ActionEvent t) {
@@ -48,21 +54,6 @@ public class Pertanyaan3Controller implements Initializable {
     @FXML
     private Button homeBtn3;
 
-    @FXML
-    void GoToKlasifikasi(ActionEvent event) {
-    navigateToPage(event, "/fxml/Klasifikasi.fxml");
-    }
-
-    @FXML
-    void GoToPertanyaan4(ActionEvent event) {
-    navigateToPage(event, "/fxml/pertanyaan4.fxml");
-    }
-
-    @FXML
-    void GoTohomePage(ActionEvent event) {
-    navigateToPage(event, "/fxml/Start.fxml");
-
-    }
     
         private void navigateToPage(ActionEvent event, String fxmlPath) {
     try {
