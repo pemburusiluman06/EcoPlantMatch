@@ -40,8 +40,11 @@ public class Pertanyaan2Controller implements Initializable {
      private void getKetinggian(ActionEvent t) {
          String selectedKetinggian = KetinggianChoicebox.getValue();
          System.out.println("Ketinggian yang dipilih: " + selectedKetinggian);
+
+
     }
-     
+
+
 
     @FXML
     void GoToKlasifikasi(ActionEvent event) {

@@ -49,6 +49,7 @@
                      </font>
                   </Text>
                   <ChoiceBox fx:id="jenisTanahChoicebox" layoutX="140.0" layoutY="200.0" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-radius: 15 15 15 15;" />
+
                </children>
             </Pane>
          </center>

@@ -33,11 +33,16 @@ public class Pertanyaan1Controller implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         jenisTanahChoicebox.getItems().addAll(JenisTanah);
         jenisTanahChoicebox.setOnAction(this::getKetinggian);
+
+        tanahBtn.setOnAction((ActionEvent event) -> {
+            Fungsi.ChangeScene(event, "/UI/Pertanyaan2.fxml", "SistemPakar");
+        });
     }
 
     private void getKetinggian(ActionEvent t) {
         String selectedKetinggian = jenisTanahChoicebox.getValue();
         System.out.println("Jenis tanah yang dipilih: " + selectedKetinggian);
+
         JenisTanahDAO.jenisTanah = jenisTanahChoicebox.getValue();
     }
 }

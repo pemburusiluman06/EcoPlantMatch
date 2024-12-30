@@ -10,7 +10,7 @@ public class DBController {
     protected static final String DB_NAME = "ecoplantmatchDB";
     protected static final String DB_HOST = "localhost";
     protected static final String DB_USER = "root";
-    protected static final String DB_PASS = "2207964";
+    protected static final String DB_PASS = "12345";
     private static Connection conn;
     private static Statement statement;
     // Constructor to establish a connection
