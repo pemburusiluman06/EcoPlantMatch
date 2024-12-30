@@ -25,7 +25,7 @@ public class StartController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         StartBtn.setOnAction((ActionEvent event) -> {
-        Fungsi.ChangeScene(event, "/UI/PilihJenisTanah.fxml", "SistemPakar");
+        Fungsi.ChangeScene(event, "/UI/Pertanyaan1.fxml", "SistemPakar");
     });
     }    
     

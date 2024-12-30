@@ -32,14 +32,14 @@
             <Image url="@../Asset/petani.png" />
          </image>
       </ImageView>
-      <Pane fx:id="Pane" prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: transparant; -fx-border-color: #797979; -fx-border-width: 0 0 2 0;">
+      <Pane fx:id="Pane" prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: transparent; -fx-border-color: #797979; -fx-border-width: 0 0 2 0;">
          <children>
-            <Button fx:id="startKlasifikasibtn" layoutX="637.0" layoutY="22.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: transparant;" text="Klasifikasi" textFill="#513939">
+            <Button fx:id="startKlasifikasibtn" layoutX="637.0" layoutY="22.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="Klasifikasi" textFill="#513939">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Button>
-            <Button fx:id="homeBtn" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparant;">
+            <Button fx:id="homeBtn" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: transparent;">
                <graphic>
                   <ImageView fitHeight="33.0" fitWidth="200.0">
                      <image>

@@ -1,12 +1,13 @@
-.button{
-    -fx-backgorund-color : #FFB000;
-    -fx-background-radius : 50;
-    
+.button {
+    -fx-background-color: #FFB000;
+    -fx-background-radius: 50;
 }
+
 .ChoiceBox {
-    -fx-background-color : transparant;
-    -fx-border-radius : 5 5 5 5;
-    .Panel {
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Efek drop shadow */
-    }
+    -fx-background-color: transparent;
+    -fx-border-radius: 5;
+}
+
+.Panel {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 20, 0, 0, 4); /* Efek drop shadow */
 }
