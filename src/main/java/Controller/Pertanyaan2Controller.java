@@ -35,7 +35,11 @@ public class Pertanyaan2Controller implements Initializable {
     @Override 
      public void initialize(URL location, ResourceBundle resources) {
         KetinggianChoicebox.getItems().addAll(Ketinggian);
-        KetinggianChoicebox.setOnAction(this::getKetinggian);}
+        KetinggianChoicebox.setOnAction(this::getKetinggian);
+        KetinggianBtn.setOnAction((ActionEvent event) -> {
+            Fungsi.ChangeScene(event, "/UI/Pertanyaan3.fxml", "SistemPakar");
+        });
+     }
      
      private void getKetinggian(ActionEvent t) {
          String selectedKetinggian = KetinggianChoicebox.getValue();
