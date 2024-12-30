@@ -36,7 +36,12 @@ public class Pertanyaan4Controller implements Initializable {
      @Override 
      public void initialize(URL location, ResourceBundle resources) {
         suhuCheckbox.getItems().addAll(Suhu);
-        suhuCheckbox.setOnAction(this::getSuhu);}
+        suhuCheckbox.setOnAction(this::getSuhu);
+        hasilBtn.setOnAction((ActionEvent event) -> {
+            Fungsi.ChangeScene(event, "/UI/akhir.fxml", "SistemPakar");
+        });
+     }
+     
       private void getSuhu(ActionEvent t) {
          String selectedSuhu = suhuCheckbox.getValue();
          System.out.println("Suhu yang di pilih: " + selectedSuhu);
