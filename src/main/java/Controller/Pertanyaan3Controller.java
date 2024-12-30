@@ -34,7 +34,11 @@ public class Pertanyaan3Controller implements Initializable {
      @Override 
      public void initialize(URL location, ResourceBundle resources) {
         PhChoiceBox.getItems().addAll(Ph);
-        PhChoiceBox.setOnAction(this::getPh);}
+        PhChoiceBox.setOnAction(this::getPh);
+     PhBtn.setOnAction((ActionEvent event) -> {
+            Fungsi.ChangeScene(event, "/UI/Pertanyaan4.fxml", "SistemPakar");
+        });
+     }
      
      private void getPh(ActionEvent t) {
          String selectedPh = PhChoiceBox.getValue();
