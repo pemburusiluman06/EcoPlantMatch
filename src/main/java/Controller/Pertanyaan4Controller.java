@@ -55,15 +55,3 @@ public class Pertanyaan4Controller implements Initializable {
 
 
     }
-
-       private void navigateToPage(ActionEvent event, String fxmlPath) {
-    try {
-        // Memuat file FXML berdasarkan path yang diberikan
-        Parent root = FXMLLoader.load(getClass().getResource(fxmlPath));
-        // Mendapatkan stage dari event saat ini
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        // Mengatur scene baru dengan file FXML yang dimuat
-        stage.setScene(new Scene(root));
-        stage.show();
-    } catch (IOException e) {
-        e.printStackTrace();}}
