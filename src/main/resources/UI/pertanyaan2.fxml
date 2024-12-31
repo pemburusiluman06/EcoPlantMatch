@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.image.Image?>
@@ -13,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Pertanyaan2Controller">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Pertanyaan2Controller">
     <stylesheets>
         <URL value="@../Style/homepage.css" />
     </stylesheets>
@@ -22,12 +21,12 @@
          <top>
             <Pane prefHeight="70.0" prefWidth="800.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="KlasifikasiBtn2" layoutX="685.0" layoutY="24.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: transparent;" text="Klasifikasi" textFill="#513939">
+                  <Button fx:id="KlasifikasiBtn" layoutX="685.0" layoutY="24.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: transparent;" text="Klasifikasi" textFill="#513939">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Button fx:id="homeBtn2" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: transparent;">
+                  <Button fx:id="homeBtn" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: transparent;">
                      <graphic>
                         <ImageView fitHeight="33.0" fitWidth="200.0">
                            <image>
@@ -53,14 +52,20 @@
             </Pane>
          </center>
          <bottom>
-            <Button fx:id="KetinggianBtn" graphicTextGap="0.0" mnemonicParsing="false"  prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #FFB000; -fx-background-radius: 15;" text="Lanjut" textFill="WHITE" BorderPane.alignment="BOTTOM_RIGHT">
-               <BorderPane.margin>
-                  <Insets bottom="30.0" right="70.0" />
-               </BorderPane.margin>
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
+            <Pane prefHeight="80.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="lanjutBtn" graphicTextGap="0.0" layoutX="600.0" layoutY="21.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #FFB000; -fx-background-radius: 15;" text="Lanjut" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="60.0" layoutY="21.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #FFB000; -fx-background-radius: 15;" text="Kembali" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
          </bottom>
       </BorderPane>
    </children>

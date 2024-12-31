@@ -12,9 +12,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AkhirController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AkhirController">
     <stylesheets>
-        <URL value="@../Style/akhir.css" />
+        <URL value="@../Style/homepage.css" />
     </stylesheets>
    <children>
       <BorderPane prefHeight="500.0" prefWidth="800.0">
@@ -39,7 +39,7 @@
          <top>
             <Pane prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #797979; -fx-border-width: 0 0 2 0;" styleClass="mainFxmlClass" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="BackToStartBtn" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: transparent;">
+                  <Button fx:id="homeBtn" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: transparent;">
                      <graphic>
                         <ImageView fitHeight="33.0" fitWidth="200.0">
                            <image>
@@ -48,7 +48,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="Klasifikasi5Btn" layoutX="691.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Klasifikasi" textFill="#513939">
+                  <Button fx:id="KlasifikasiBtn" layoutX="691.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Klasifikasi" textFill="#513939">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
