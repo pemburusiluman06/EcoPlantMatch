@@ -24,6 +24,8 @@ import javafx.scene.control.Dialog;
 
 public class Pertanyaan2Controller implements Initializable {
 
+    public static String selectedKetinggian;
+    
     @FXML
     private Button KlasifikasiBtn;
 
@@ -99,7 +101,7 @@ public class Pertanyaan2Controller implements Initializable {
     }
 
     private void getKetinggian(ActionEvent t) {
-        String selectedKetinggian = KetinggianChoicebox.getValue();
+        selectedKetinggian = KetinggianChoicebox.getValue();
         System.out.println("Ketinggian yang dipilih: " + selectedKetinggian);
 
         if (selectedKetinggian.equals("Rendah: 500-700 mdpl")) {

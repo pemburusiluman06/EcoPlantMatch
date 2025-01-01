@@ -24,6 +24,8 @@ import javafx.scene.control.Dialog;
 
 public class Pertanyaan4Controller implements Initializable {
 
+    public static String selectedSuhu;
+    
     @FXML
     private Button KlasifikasiBtn;
 
@@ -55,7 +57,7 @@ public class Pertanyaan4Controller implements Initializable {
                 alert.show();
             } else {
                 Fungsi.lastPage = "/UI/Pertanyaan5.fxml";
-                Fungsi.ChangeScene(event, "/UI/Pertanyaan5.fxml", "EcoPlantMatch - Pilih Kondisi Cahaya");
+                Fungsi.ChangeScene(event, "/UI/Pertanyaan5.fxml", "EcoPlantMatch - Pilih Curah Hujan");
             }
         });
 
@@ -100,7 +102,7 @@ public class Pertanyaan4Controller implements Initializable {
     }
 
     private void getSuhu(ActionEvent t) {
-        String selectedSuhu = suhuCheckbox.getValue();
+        selectedSuhu = suhuCheckbox.getValue();
         System.out.println("Suhu yang di pilih: " + selectedSuhu);
 
         if (selectedSuhu.equals("Panas: 30 - 38 Derajat Celcius")) {

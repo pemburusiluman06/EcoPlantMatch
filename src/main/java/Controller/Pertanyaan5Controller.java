@@ -27,6 +27,8 @@ import javafx.scene.control.Dialog;
 
 public class Pertanyaan5Controller implements Initializable {
 
+    public static String selectedCurahHujan;
+    
     @FXML
     private Button KlasifikasiBtn;
 
@@ -103,8 +105,8 @@ public class Pertanyaan5Controller implements Initializable {
     }
 
     private void getCurahHujan(ActionEvent t) {
-        String selectedCurahHujan = curahHujanCheckbox.getValue();
-        System.out.println("Suhu yang di pilih: " + selectedCurahHujan);
+        selectedCurahHujan = curahHujanCheckbox.getValue();
+        System.out.println("Curah hujan yang di pilih: " + selectedCurahHujan);
 
         if (selectedCurahHujan.equals("Tinggi (300 – 500 mm)")) {
             CurahHujanDAO.curahHujan = "Tinggi";
