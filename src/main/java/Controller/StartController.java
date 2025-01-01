@@ -19,20 +19,20 @@ public class StartController implements Initializable {
     @FXML
     private Button StartBtn;
 
-    /**
-     * Initializes the controller class.
-     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         StartBtn.setOnAction((ActionEvent event) -> {
-        Fungsi.ChangeScene(event, "/UI/Pertanyaan1.fxml", "SistemPakar");
-    });
+            Fungsi.lastPage = "/UI/Pertanyaan1.fxml";
+            Fungsi.ChangeScene(event, "/UI/Pertanyaan1.fxml", "EcoPlantMatch - Pilih Jenis Tanah");
+        });
         startKlasifikasibtn.setOnAction((ActionEvent event) -> {
-            Fungsi.ChangeScene(event, "/UI/Klasifikasi.fxml", "SistemPakar");
+            Fungsi.lastPage = "/UI/Start.fxml";
+            Fungsi.ChangeScene(event, "/UI/Klasifikasi.fxml", "EcoPlantMatch - Klasifikasi");
+            
         });
         homeBtn.setOnAction((ActionEvent event) -> {
-            Fungsi.ChangeScene(event, "/UI/Start.fxml", "SistemPakar");
+            Fungsi.ChangeScene(event, "/UI/Start.fxml", "EcoPlantMatch - Home");
         });
-    }    
-    
+    }
+
 }

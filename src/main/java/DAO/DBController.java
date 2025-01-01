@@ -10,7 +10,7 @@ public class DBController {
     protected static final String DB_NAME = "ecoplantmatchDB";
     protected static final String DB_HOST = "localhost";
     protected static final String DB_USER = "root";
-    protected static final String DB_PASS = "12345";
+    protected static final String DB_PASS = "123456";
     private static Connection conn;
     private static Statement statement;
     // Constructor to establish a connection
@@ -114,7 +114,7 @@ public class DBController {
 
         return beliefs;
     }
-    
+
     public Map<String, Double> getCurahHujanBeliefs(String height) {
         Map<String, Double> beliefs = new HashMap<>();
         String query = "SELECT kode_tanaman, nilai FROM relasi_curah_hujan "
@@ -151,4 +151,22 @@ public class DBController {
 
         return plantCode;
     }
+
+    public String getKeterangan(String namaTanaman) {
+        String query = "SELECT keterangan FROM tanaman WHERE nama_tanaman = ?";
+
+        try (Connection conn = getConn(); PreparedStatement stmt = conn.prepareStatement(query)) {
+            stmt.setString(1, namaTanaman);
+            ResultSet rs = stmt.executeQuery();
+
+            if (rs.next()) {
+                return rs.getString("keterangan");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return namaTanaman;
+    }
+
 }

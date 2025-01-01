@@ -2,6 +2,8 @@
 
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
@@ -12,50 +14,90 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AkhirController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AkhirController">
     <stylesheets>
         <URL value="@../Style/akhir.css" />
     </stylesheets>
-   <children>
-      <BorderPane prefHeight="500.0" prefWidth="800.0">
-         <center>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
-               <children>
-                  <TableView fx:id="TabelRekomen" layoutX="60.0" layoutY="153.0" prefHeight="241.0" prefWidth="681.0">
-                    <columns>
-                      <TableColumn fx:id="No" prefWidth="47.0" text="No" />
-                      <TableColumn fx:id="JenisVeg" prefWidth="139.0" text="Jenis Vegetasi" />
-                        <TableColumn fx:id="KetVeg" minWidth="0.0" prefWidth="283.0" text="Keterangan" />
-                        <TableColumn fx:id="SaranTanam" prefWidth="211.0" text="Saran Penanaman" />
-                    </columns>
-                  </TableView>
-                  <Text fill="#36863a" layoutX="240.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hasil Rekomendasi">
-                     <font>
-                        <Font name="System Bold" size="36.0" />
-                     </font>
-                  </Text>
-               </children></Pane>
-         </center>
-         <top>
-            <Pane prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #797979; -fx-border-width: 0 0 2 0;" styleClass="mainFxmlClass" BorderPane.alignment="CENTER">
-               <children>
-                  <Button fx:id="BackToStartBtn" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: transparent;">
-                     <graphic>
-                        <ImageView fitHeight="33.0" fitWidth="200.0">
-                           <image>
-                              <Image url="@../Asset/logo Ecoplant.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button fx:id="Klasifikasi5Btn" layoutX="691.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Klasifikasi" textFill="#513939">
-                     <font>
-                        <Font name="System Bold" size="13.0" />
-                     </font>
-                  </Button>
-               </children>
-            </Pane>
-         </top>
-      </BorderPane>
-   </children>
+    <children>
+        <ScrollPane prefHeight="600.0" prefWidth="800.0">
+            <content>
+                <BorderPane prefHeight="500.0" prefWidth="800.0">
+                    <center>
+                        <Pane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+                            <children>
+                                <TableView fx:id="TabelRekomen" layoutX="359.0" layoutY="120.0" prefHeight="300.0" prefWidth="420.0" style="-fx-background-color: white; -fx-border-color: #36863a; -fx-border-width: 1px;">
+                                    <columns>
+                                        <TableColumn fx:id="No" prefWidth="48.0" resizable="false" style="-fx-alignment: CENTER;" text="No" />
+                                        <TableColumn fx:id="jenisTanaman" prefWidth="116.0" resizable="false" style="-fx-alignment: CENTER-LEFT;" text="Nama Tanaman" />
+                                        <TableColumn fx:id="keterangan" prefWidth="187.0" resizable="false" style="-fx-alignment: CENTER-LEFT;" text="Keterangan" />
+                                        <TableColumn fx:id="nilaiBelief" prefWidth="69.0" resizable="false" style="-fx-alignment: CENTER;" text="Nilai" />
+                                    </columns>
+                                </TableView>
+                                <Text fill="#36863a" layoutX="409.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hasil Rekomendasi">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Text>
+                                <Text fill="#36863a" layoutX="47.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jawaban Anda">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Text>
+                                <Label fx:id="labelTanah" layoutX="47.0" layoutY="168.0" prefHeight="27.0" prefWidth="260.0" text="Label" textFill="#36863a">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="labelKetinggian" layoutX="47.0" layoutY="198.0" prefHeight="27.0" prefWidth="260.0" text="Label" textFill="#36863a">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="labelCahaya" layoutX="47.0" layoutY="228.0" prefHeight="27.0" prefWidth="260.0" text="Label" textFill="#36863a">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="labelSuhu" layoutX="47.0" layoutY="258.0" prefHeight="27.0" prefWidth="260.0" text="Label" textFill="#36863a">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="labelCurahHujan" layoutX="47.0" layoutY="288.0" prefHeight="27.0" prefWidth="260.0" text="Label" textFill="#36863a">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="306.0" layoutY="469.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="189.0" style="-fx-background-color: #FFB000; -fx-background-radius: 15;" text="Ke Halaman Utama" textFill="WHITE">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </Pane>
+                    </center>
+                    <top>
+                        <Pane prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #797979; -fx-border-width: 0 0 2 0;" styleClass="mainFxmlClass" BorderPane.alignment="CENTER">
+                            <children>
+                                <Button fx:id="homeBtn" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: transparent;">
+                                    <graphic>
+                                        <ImageView fitHeight="33.0" fitWidth="200.0">
+                                            <image>
+                                                <Image url="@../Asset/logo Ecoplant.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="KlasifikasiBtn" layoutX="691.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Klasifikasi" textFill="#513939">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </Pane>
+                    </top>
+                </BorderPane>
+            </content>
+        </ScrollPane>
+    </children>
 </AnchorPane>

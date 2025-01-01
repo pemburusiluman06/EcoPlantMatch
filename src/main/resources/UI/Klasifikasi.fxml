@@ -11,23 +11,23 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KlasifikasiController">
     <stylesheets>
-        <URL value="@/styles/klasifikasi.css" />
+        <URL value="@../Style/homepage.css" />
     </stylesheets>
    <children>
-      <Pane prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: transparant; -fx-border-color: #797979; -fx-border-width: 0 0 2 0;">
+      <Pane prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: transparent; -fx-border-color: #797979; -fx-border-width: 0 0 2 0;">
          <children>
-            <Button fx:id="KlasifikasiBtn" layoutX="675.0" layoutY="18.0" mnemonicParsing="false" onAction="#GoToKlasifiaksi" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: transparant;" text="Klasifikasi" textFill="#513939">
+            <Button fx:id="KlasifikasiBtn" layoutX="675.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: transparent;" text="Klasifikasi" textFill="#513939">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="homeBtn" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#GoToStart" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: transparant;">
+            <Button fx:id="homeBtn" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: transparent;">
                <graphic>
                   <ImageView fitHeight="33.0" fitWidth="200.0">
                      <image>
-                        <Image url="@../../../../../../../../Downloads/logo%20Ecoplant.png" />
+                        <Image url="@../Asset/logo Ecoplant.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -38,7 +38,7 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="999.0" prefWidth="800.0">
                <children>
-                  <Pane accessibleRole="TEXT" layoutY="-1.0" prefHeight="992.0" prefWidth="783.0" style="-fx-background-color: #FFFFFF;">
+                  <Pane accessibleRole="TEXT" layoutY="4.0" prefHeight="992.0" prefWidth="783.0" style="-fx-background-color: #FFFFFF;">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e9ffc5" height="41.0" layoutX="93.0" layoutY="61.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="200.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e9ffc5" height="41.0" layoutX="493.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="200.0" />
@@ -103,9 +103,14 @@
                         </Text>
                         <ImageView fitHeight="377.0" fitWidth="695.0" layoutX="43.0" layoutY="548.0">
                            <image>
-                              <Image url="@../com/example/demo/asset/jenis-tanah-menurut-klasifikasi-usda-03.jpg" />
+                              <Image url="@../Asset/jenis-tanah-menurut-klasifikasi-usda-03.jpg" />
                            </image>
                         </ImageView>
+                        <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="23.0" layoutY="932.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #FFB000; -fx-background-radius: 15;" text="Kembali" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
                      </children>
                   </Pane>
                </children>
