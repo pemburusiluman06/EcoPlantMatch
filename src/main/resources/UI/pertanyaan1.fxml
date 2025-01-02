@@ -9,66 +9,71 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Pertanyaan1Controller">
+<AnchorPane id="AnchorPane" prefHeight="745.0" prefWidth="1365.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Pertanyaan1Controller">
    <stylesheets>
         <URL value="@../Style/homepage.css" />
     </stylesheets>
     <children>
-      <BorderPane prefHeight="500.0" prefWidth="800.0">
+      <ImageView fitHeight="745.0" fitWidth="1364.0" styleClass="Gambar">
+         <image>
+            <Image url="@../Asset/veg1.png" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="745.0" prefWidth="1365.0">
          <top>
-            <Pane prefHeight="70.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <Pane prefHeight="100.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #CDCDCD; -fx-border-width: 0 0 4 0;" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="homeBtn" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: transparent;" />
-                  <Button fx:id="KlasifikasiBtn" layoutX="685.0" layoutY="24.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Klasifikasi" textFill="WHITE">
+                  <Button fx:id="homeBtn" layoutX="29.0" layoutY="17.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="59.0" fitWidth="200.0">
+                           <image>
+                              <Image url="@../Asset/Untitled%20design%20(15).png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="KlasifikasiBtn" layoutX="1141.0" layoutY="32.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" text="Klasifikasi" textFill="WHITE">
                      <font>
-                        <Font name="Berlin Sans FB" size="14.0" />
+                        <Font name="Berlin Sans FB" size="22.0" />
                      </font>
                      <styleClass>
                         <String fx:value="Btn" />
                         <String fx:value="rectangle-shadow" />
                      </styleClass>
                   </Button>
-                  <Line endX="822.2929077148438" endY="67.5" startX="-32.0" startY="67.5" stroke="#cdcdcd" strokeWidth="2.0" />
-                  <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="563.0" layoutY="24.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="105.0" style="-fx-background-radius: 15;" text="Kembali" textFill="WHITE">
+                  <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="928.0" layoutY="31.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-background-radius: 15;" text="Kembali" textFill="WHITE">
                      <font>
-                        <Font name="Berlin Sans FB" size="14.0" />
+                        <Font name="Berlin Sans FB" size="22.0" />
                      </font>
                      <styleClass>
                         <String fx:value="Btn" />
                         <String fx:value="rectangle-shadow" />
                      </styleClass>
                   </Button>
-                  <ImageView fitHeight="45.0" fitWidth="150.0" layoutX="14.0" layoutY="12.0">
-                     <image>
-                        <Image url="@../Asset/Untitled%20design%20(15).png" />
-                     </image>
-                  </ImageView>
                </children>
             </Pane>
          </top>
          <center>
             <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Text fill="#3e793e" layoutX="143.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apa jenis tanah di lingkungan anda?" wrappingWidth="642.13671875">
+                  <Text fill="#3e793e" layoutX="222.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apa jenis tanah di lingkungan anda?" wrappingWidth="760.8034057617188">
                      <font>
-                        <Font name="Berlin Sans FB" size="24.0" />
+                        <Font name="Berlin Sans FB" size="45.0" />
                      </font>
                   </Text>
-                  <ChoiceBox fx:id="jenisTanahChoicebox" layoutX="140.0" layoutY="200.0" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent; -fx-border-color: #3e793e; -fx-border-radius: 15 15 15 15;" />
+                  <ChoiceBox fx:id="jenisTanahChoicebox" layoutX="222.0" layoutY="338.0" prefHeight="77.0" prefWidth="922.0" style="-fx-background-color: transparent; -fx-border-color: #3e793e; -fx-border-radius: 15 15 15 15;" />
 
                </children>
             </Pane>
          </center>
          <bottom>
-            <Pane prefHeight="80.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <Pane prefHeight="184.0" prefWidth="1365.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="lanjutBtn" graphicTextGap="0.0" layoutX="600.0" layoutY="21.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-radius: 15;" text="Lanjut" textFill="WHITE">
+                  <Button fx:id="lanjutBtn" graphicTextGap="0.0" layoutX="984.0" layoutY="60.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-background-color: #FFB000;" text="Lanjut" textFill="WHITE">
                      <font>
-                        <Font name="Berlin Sans FB" size="20.0" />
+                        <Font name="Berlin Sans FB" size="24.0" />
                      </font>
                      <styleClass>
                         <String fx:value="Btn" />

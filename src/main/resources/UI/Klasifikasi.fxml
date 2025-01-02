@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ScrollPane?>
@@ -7,44 +8,51 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KlasifikasiController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1365.0" styleClass="AnchorPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KlasifikasiController">
     <stylesheets>
         <URL value="@../Style/homepage.css" />
     </stylesheets>
    <children>
-      <Pane prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: transparent;">
+      <Pane prefHeight="100.0" prefWidth="1365.0" style="-fx-background-color: #FFFFFF;" styleClass="pane">
          <children>
-            <Button fx:id="KlasifikasiBtn" layoutX="660.0" layoutY="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #4a4848; -fx-border-width: 5;" text="Klasifikasi" textFill="WHITE">
+            <Button fx:id="KlasifikasiBtn" layoutX="1141.0" layoutY="32.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" text="Klasifikasi" textFill="WHITE">
                <font>
-                  <Font name="Berlin Sans FB" size="14.0" />
+                  <Font name="Berlin Sans FB" size="22.0" />
                </font>
+               <styleClass>
+                  <String fx:value="Btn" />
+                  <String fx:value="rectangle-shadow" />
+               </styleClass>
             </Button>
-            <Button fx:id="homeBtn" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: transparent;">
+            <Button fx:id="homeBtn" layoutX="29.0" layoutY="17.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: transparent;">
                <graphic>
-                  <ImageView fitHeight="45.0" fitWidth="150.0">
+                  <ImageView fitHeight="59.0" fitWidth="200.0">
                      <image>
                         <Image url="@../Asset/Untitled%20design%20(15).png" />
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="536.0" layoutY="23.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="105.0" style="-fx-background-color: #4a4848; -fx-background-radius: 15;" styleClass="Btn" text="Kembali" textFill="WHITE">
+            <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="920.0" layoutY="32.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" text="Kembali" textFill="WHITE">
                <font>
-                  <Font name="Berlin Sans FB" size="14.0" />
+                  <Font name="Berlin Sans FB" size="22.0" />
                </font>
+               <styleClass>
+                  <String fx:value="Btn" />
+                  <String fx:value="rectangle-shadow" />
+               </styleClass>
             </Button>
          </children>
       </Pane>
-      <ScrollPane layoutY="70.0" prefHeight="430.0" prefWidth="800.0">
+      <ScrollPane layoutY="100.0" prefHeight="772.0" prefWidth="800.0" styleClass="AnchorPane">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="990.0" prefWidth="800.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="959.0" prefWidth="1351.0">
                <children>
-                  <Pane accessibleRole="TEXT" layoutY="4.0" prefHeight="992.0" prefWidth="783.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;">
+                  <Pane accessibleRole="TEXT" prefHeight="996.0" prefWidth="1350.0" style="-fx-background-radius: 5;">
                      <children>
-                        <Pane layoutX="515.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                        <Pane layoutX="979.0" layoutY="264.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
                            <children>
                               <Text fill="#542828" layoutX="-13.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ph Tanah" textAlignment="CENTER" wrappingWidth="226.13671875">
                                  <font>
@@ -73,7 +81,7 @@
                               </Text>
                            </children>
                         </Pane>
-                        <Pane layoutX="292.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                        <Pane layoutX="601.0" layoutY="285.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
                            <children>
                               <Text layoutX="23.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendah : 500 - 700 Mdpl">
                                  <font>
@@ -97,7 +105,7 @@
                               </Text>
                            </children>
                         </Pane>
-                        <Pane layoutX="66.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                        <Pane layoutX="274.0" layoutY="280.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
                            <children>
                               <Text layoutX="54.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panas : 30 - 38 °C" />
                               <Text fill="#542828" layoutX="-13.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suhu Udara" textAlignment="CENTER" wrappingWidth="226.13671875">
@@ -108,20 +116,9 @@
                               <Text layoutX="52.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dingin : 15 - 25 °C" />
                            </children>
                         </Pane>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4a4848" height="41.0" layoutX="318.0" layoutY="409.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 10; -fx-arc-width: 10;" width="150.0" />
-                        <ImageView fitHeight="377.0" fitWidth="695.0" layoutX="45.0" layoutY="474.0">
-                           <image>
-                              <Image url="@../Asset/jenis-tanah-menurut-klasifikasi-usda-03.jpg" />
-                           </image>
-                        </ImageView>
-                        <Text fill="WHITE" layoutX="351.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Tanah">
+                        <Text fill="#49684d" layoutX="103.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Klasifikasi berisi panduan dalam mengisi pertanyaan untuk rekomendasi jenis vegetasi berdasarkan lingkungan" wrappingWidth="1195.3934936523438">
                            <font>
-                              <Font name="Berlin Sans FB" size="18.0" />
-                           </font>
-                        </Text>
-                        <Text fill="#49684d" layoutX="44.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Klasifikasi berisi panduan dalam mengisi pertanyaan untuk rekomendasi jenis vegetasi berdasarkan lingkungan" wrappingWidth="659.3935546875">
-                           <font>
-                              <Font name="Berlin Sans FB" size="24.0" />
+                              <Font name="Berlin Sans FB" size="45.0" />
                            </font>
                         </Text>
                      </children>
