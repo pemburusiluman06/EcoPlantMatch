@@ -4,7 +4,7 @@
 }
 
 .ChoiceBox {
-    -fx-background-color: transparant;
+    -fx-background-color: transparent;
     -fx-border-radius: 5;
 }
 
@@ -40,19 +40,6 @@
 .Btn {
 -fx-background-color: #9ACC9F;
 -fx-background-radius: 15;
--fx-fill: #FFFFFF;}
+-fx-fill: #FFFFFF:
 
-.Gambar {
--fx-opacity: 70%;
 }
-.AnchorPane{
--fx-pref-Width: 1365px;
--fx-pref-height: 745px;
-}
-.pane{
--fx-border-color: #CDCDCD;
--fx-border-width: 0 0 4 0;
-}
-
-
-
