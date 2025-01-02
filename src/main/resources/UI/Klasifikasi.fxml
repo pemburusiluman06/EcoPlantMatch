@@ -46,82 +46,290 @@
             </Button>
          </children>
       </Pane>
-      <ScrollPane layoutY="100.0" prefHeight="772.0" prefWidth="1365.0" styleClass="AnchorPane">
+      <ScrollPane layoutY="100.0" prefHeight="645.0" prefWidth="1365.0" styleClass="AnchorPane">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="959.0" prefWidth="1351.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="3480.0" prefWidth="1351.0">
                <children>
-                  <Pane accessibleRole="TEXT" prefHeight="996.0" prefWidth="1350.0" style="-fx-background-radius: 5;">
+                  <Pane accessibleRole="TEXT" layoutX="-2.0" layoutY="-1.0" prefHeight="3492.0" prefWidth="1350.0" style="-fx-background-radius: 5;">
                      <children>
-                        <Pane layoutX="94.0" layoutY="95.0" prefHeight="204.0" prefWidth="1196.0" style="-fx-background-color: #FFFFFF;" />
-                        <Pane layoutX="978.0" layoutY="389.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                        <Pane layoutX="94.0" layoutY="95.0" prefHeight="204.0" prefWidth="1196.0" style="-fx-background-color: #F0F0F0; -fx-border-radius: 30; -fx-background-radius: 30;" styleClass="rectangle-shadow">
                            <children>
-                              <Text fill="#542828" layoutX="-13.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ph Tanah" textAlignment="CENTER" wrappingWidth="226.13671875">
+                              <ImageView fitHeight="207.0" fitWidth="496.0" layoutX="701.0" style="-fx-opacity: 70%;">
+                                 <image>
+                                    <Image url="@../Asset/Untitled%20design%20(18).png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#49684d" layoutX="32.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panduan mengisi pertanyaan untuk rekomendasi jenis vegetasi berdasarkan lingkungan" wrappingWidth="850.0601806640625">
                                  <font>
-                                    <Font name="System Bold" size="16.0" />
-                                 </font>
-                              </Text>
-                              <Text layoutX="75.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.0 - 6.0">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Text>
-                              <Text layoutX="75.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6.0 - 6.5">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Text>
-                              <Text layoutX="75.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6.5 - 7.0">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Text>
-                              <Text layoutX="75.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7.0 - 7.5">
-                                 <font>
-                                    <Font size="14.0" />
+                                    <Font name="Berlin Sans FB" size="40.0" />
                                  </font>
                               </Text>
                            </children>
                         </Pane>
-                        <Pane layoutX="596.0" layoutY="380.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                        <Pane layoutX="591.0" layoutY="444.0" prefHeight="200.0" prefWidth="294.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
                            <children>
-                              <Text layoutX="23.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendah : 500 - 700 Mdpl">
+                              <Text layoutX="52.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendah : 500 - 700 Mdpl">
                                  <font>
-                                    <Font size="14.0" />
+                                    <Font name="Berlin Sans FB" size="18.0" />
                                  </font>
                               </Text>
-                              <Text layoutX="20.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sedang : 700 - 1000 Mdpl">
+                              <Text layoutX="50.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sedang : 700 - 1000 Mdpl">
                                  <font>
-                                    <Font size="14.0" />
+                                    <Font name="Berlin Sans FB" size="18.0" />
                                  </font>
                               </Text>
-                              <Text layoutX="20.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tinggi : 1000 - 1500 Mdpl">
+                              <Text layoutX="52.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tinggi : 1000 - 1500 Mdpl">
                                  <font>
-                                    <Font size="14.0" />
+                                    <Font name="Berlin Sans FB" size="18.0" />
                                  </font>
                               </Text>
-                              <Text fx:id="teks1" fill="#542828" layoutX="-13.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ketinggian Lingkungan" textAlignment="CENTER" wrappingWidth="226.13671875">
+                              <Text fx:id="teks1" fill="#542828" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ketinggian Lingkungan" textAlignment="CENTER" wrappingWidth="284.8033447265625">
                                  <font>
-                                    <Font name="System Bold" size="16.0" />
+                                    <Font name="Berlin Sans FB" size="24.0" />
                                  </font>
                               </Text>
                            </children>
                         </Pane>
-                        <Pane layoutX="239.0" layoutY="370.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                        <Pane layoutX="185.0" layoutY="444.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
                            <children>
-                              <Text layoutX="54.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panas : 30 - 38 °C" />
-                              <Text fill="#542828" layoutX="-13.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suhu Udara" textAlignment="CENTER" wrappingWidth="226.13671875">
+                              <Text layoutX="84.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panas : 30 - 38 °C">
                                  <font>
-                                    <Font name="System Bold" size="16.0" />
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font></Text>
+                              <Text fill="#542828" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suhu Udara" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
                                  </font>
                               </Text>
-                              <Text layoutX="52.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dingin : 15 - 25 °C" />
+                              <Text layoutX="85.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dingin : 15 - 25 °C">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font></Text>
                            </children>
                         </Pane>
-                        <Text fill="#49684d" layoutX="103.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panduan mengisi pertanyaan untuk rekomendasi jenis vegetasi berdasarkan lingkungan" wrappingWidth="1195.3934936523438">
+                        <Pane layoutX="588.0" layoutY="747.0" prefHeight="67.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text fill="#542828" layoutX="33.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intensitas Cahaya" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="952.0" layoutY="444.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text layoutX="51.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sedang (200 - 300 mm)">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font></Text>
+                              <Text fill="#542828" layoutX="37.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Curah hujan " textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="73.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendah (&lt;200 mm)">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font></Text>
+                              <Text layoutX="60.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tinggi 300 - 500 mm)">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font></Text>
+                           </children>
+                        </Pane>
+                        <Text layoutX="183.0" layoutY="898.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terkena cahaya dengan sempurna">
                            <font>
-                              <Font name="Berlin Sans FB" size="40.0" />
+                              <Font name="Berlin Sans FB" size="18.0" />
                            </font>
                         </Text>
+                        <Text layoutX="989.0" layoutY="900.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cahaya sangat terhalang">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="674.0" layoutY="901.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sedikit terhalang">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="192.0" fitWidth="296.0" layoutX="936.0" layoutY="931.0">
+                           <image>
+                              <Image url="@../Asset/%23F0F0F0%20(1).png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="205.0" fitWidth="317.0" layoutX="155.0" layoutY="924.0">
+                           <image>
+                              <Image url="@../Asset/cahaya%20penuh.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="217.0" fitWidth="269.0" layoutX="604.0" layoutY="931.0">
+                           <image>
+                              <Image url="@../Asset/sebagian.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="588.0" layoutY="1203.0" prefHeight="67.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text fill="#542828" layoutX="33.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Tanah" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <ImageView fitHeight="627.0" fitWidth="1114.0" layoutX="152.0" layoutY="1306.0">
+                           <image>
+                              <Image url="@../../../../../../OneDrive/Dokumen/sispak%20baru/demo/src/main/resources/com/example/demo/asset/jenis-tanah-menurut-klasifikasi-usda-03.jpg" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="559.0" layoutY="2003.0" prefHeight="67.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text fill="#542828" layoutX="33.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daftar Tanaman" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="185.0" layoutY="2120.0" prefHeight="277.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text fill="#542828" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lemon" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="147.0" fitWidth="231.0" layoutX="35.0" layoutY="75.0">
+                                 <image>
+                                    <Image url="@../Asset/lemon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="559.0" layoutY="2120.0" prefHeight="277.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text fill="#542828" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apel" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="200.0" fitWidth="169.0" layoutX="66.0" layoutY="63.0">
+                                 <image>
+                                    <Image url="@../Asset/apple.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="934.0" layoutY="2120.0" prefHeight="277.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text fill="#542828" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Markisa" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="151.0" fitWidth="216.0" layoutX="42.0" layoutY="76.0">
+                                 <image>
+                                    <Image url="@../Asset/markisa.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="185.0" layoutY="2447.0" prefHeight="277.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text fill="#542828" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jeruk" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="182.0" fitWidth="180.0" layoutX="60.0" layoutY="71.0">
+                                 <image>
+                                    <Image url="@../Asset/jeruk.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="559.0" layoutY="2447.0" prefHeight="277.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text fill="#542828" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Timun" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="119.0" fitWidth="200.0" layoutX="50.0" layoutY="99.0">
+                                 <image>
+                                    <Image url="@../Asset/timun.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="934.0" layoutY="2447.0" prefHeight="277.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text fill="#542828" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Strawberry" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="182.0" fitWidth="165.0" layoutX="68.0" layoutY="68.0">
+                                 <image>
+                                    <Image url="@../Asset/strawberry.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="185.0" layoutY="2801.0" prefHeight="277.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text fill="#542828" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cabai" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="139.0" fitWidth="200.0" layoutX="50.0" layoutY="85.0">
+                                 <image>
+                                    <Image url="@../Asset/chilli.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="559.0" layoutY="2801.0" prefHeight="277.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text fill="#542828" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rasberry" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="167.0" fitWidth="188.0" layoutX="56.0" layoutY="80.0">
+                                 <image>
+                                    <Image url="@../Asset/rasberry.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="934.0" layoutY="2801.0" prefHeight="277.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text fill="#542828" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aprikot" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="189.0" fitWidth="200.0" layoutX="50.0" layoutY="63.0">
+                                 <image>
+                                    <Image url="@../Asset/aprikot.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="185.0" layoutY="3127.0" prefHeight="277.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                           <children>
+                              <Text fill="#542828" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tomat" textAlignment="CENTER" wrappingWidth="226.13671875">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="177.0" fitWidth="180.0" layoutX="60.0" layoutY="71.0">
+                                 <image>
+                                    <Image url="@../Asset/tomato.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
                      </children>
                   </Pane>
                </children>
