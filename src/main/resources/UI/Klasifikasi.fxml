@@ -46,13 +46,14 @@
             </Button>
          </children>
       </Pane>
-      <ScrollPane layoutY="100.0" prefHeight="772.0" prefWidth="800.0" styleClass="AnchorPane">
+      <ScrollPane layoutY="100.0" prefHeight="772.0" prefWidth="1365.0" styleClass="AnchorPane">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="959.0" prefWidth="1351.0">
                <children>
                   <Pane accessibleRole="TEXT" prefHeight="996.0" prefWidth="1350.0" style="-fx-background-radius: 5;">
                      <children>
-                        <Pane layoutX="979.0" layoutY="264.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                        <Pane layoutX="94.0" layoutY="95.0" prefHeight="204.0" prefWidth="1196.0" style="-fx-background-color: #FFFFFF;" />
+                        <Pane layoutX="978.0" layoutY="389.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
                            <children>
                               <Text fill="#542828" layoutX="-13.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ph Tanah" textAlignment="CENTER" wrappingWidth="226.13671875">
                                  <font>
@@ -81,7 +82,7 @@
                               </Text>
                            </children>
                         </Pane>
-                        <Pane layoutX="601.0" layoutY="285.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                        <Pane layoutX="596.0" layoutY="380.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
                            <children>
                               <Text layoutX="23.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendah : 500 - 700 Mdpl">
                                  <font>
@@ -105,7 +106,7 @@
                               </Text>
                            </children>
                         </Pane>
-                        <Pane layoutX="274.0" layoutY="280.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                        <Pane layoutX="239.0" layoutY="370.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
                            <children>
                               <Text layoutX="54.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panas : 30 - 38 °C" />
                               <Text fill="#542828" layoutX="-13.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suhu Udara" textAlignment="CENTER" wrappingWidth="226.13671875">
@@ -116,9 +117,9 @@
                               <Text layoutX="52.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dingin : 15 - 25 °C" />
                            </children>
                         </Pane>
-                        <Text fill="#49684d" layoutX="103.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Klasifikasi berisi panduan dalam mengisi pertanyaan untuk rekomendasi jenis vegetasi berdasarkan lingkungan" wrappingWidth="1195.3934936523438">
+                        <Text fill="#49684d" layoutX="103.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panduan mengisi pertanyaan untuk rekomendasi jenis vegetasi berdasarkan lingkungan" wrappingWidth="1195.3934936523438">
                            <font>
-                              <Font name="Berlin Sans FB" size="45.0" />
+                              <Font name="Berlin Sans FB" size="40.0" />
                            </font>
                         </Text>
                      </children>
