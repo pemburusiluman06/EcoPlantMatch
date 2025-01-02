@@ -11,3 +11,35 @@
 .Panel {
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 20, 0, 0, 4); /* Efek drop shadow */
 }
+.box {
+    -fx-background-color: lightblue; /* Warna latar belakang kotak */
+    -fx-padding: 20; /* Padding di dalam kotak */
+    -fx-effect: dropshadow(gaussian, gray, 10, 0.0, 5, 5); /* Efek bayangan */
+    -fx-border-radius: 10; /* Membuat sudut kotak melengkung */
+    -fx-background-radius: 10; /* Membuat sudut latar belakang melengkung */
+}
+
+/* Efek DropShadow pada Rectangle */
+.rectangle-shadow {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 10, 0, 0, 1);
+    -fx-fill: linear-gradient(to bottom, transparant, #f0f0f0); /* Warna gradien */
+}
+
+/* Efek Lighting pada Rectangle */
+.rectangle-lighting {
+    -fx-effect: lighting;S
+    -fx-fill: linear-gradient(to bottom, #ffb380, #ff6f3c); /* Warna gradien */
+}
+
+/* Kombinasi DropShadow dan Lighting */
+.rectangle-combined {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 5, 5), lighting;
+    -fx-fill: radial-gradient(radius 100%, #ffd700, #ff4500); /* Warna gradien */
+}
+
+.Btn {
+-fx-background-color: #9ACC9F;
+-fx-background-radius: 15;
+-fx-fill: #FFFFFF:
+
+}
