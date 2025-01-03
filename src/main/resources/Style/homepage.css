@@ -22,12 +22,12 @@
 /* Efek DropShadow pada Rectangle */
 .rectangle-shadow {
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 10, 0, 0, 1);
-    -fx-fill: linear-gradient(to bottom, transparent, #f0f0f0); /* Warna gradien */
+    -fx-fill: linear-gradient(to bottom, transparant, #f0f0f0); /* Warna gradien */
 }
 
 /* Efek Lighting pada Rectangle */
 .rectangle-lighting {
-    -fx-effect: lighting;
+    -fx-effect: lighting;S
     -fx-fill: linear-gradient(to bottom, #ffb380, #ff6f3c); /* Warna gradien */
 }
 
@@ -40,6 +40,4 @@
 .Btn {
 -fx-background-color: #9ACC9F;
 -fx-background-radius: 15;
--fx-fill: #FFFFFF;
-
-}
+-fx-fill: #FFFFFF; }

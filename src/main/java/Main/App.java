@@ -12,7 +12,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         var parent = FXMLLoader.load(getClass().getResource("/UI/Start.fxml"));
-        Scene scene;
+        Scene scene; 
         scene = new Scene((Parent) parent);
         stage.setScene(scene);
         stage.show();

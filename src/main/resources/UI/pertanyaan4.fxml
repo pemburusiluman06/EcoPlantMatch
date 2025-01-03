@@ -17,7 +17,7 @@
         <URL value="@../Style/homepage.css" />
     </stylesheets>
    <children>
-      <ImageView fitHeight="755.0" fitWidth="1364.0" layoutY="54.0" style="-fx-opacity: 70%;">
+      <ImageView fitHeight="789.0" fitWidth="1364.0" layoutY="54.0" style="-fx-opacity: 70%;">
          <image>
             <Image url="@../Asset/veg1.png" />
          </image>
@@ -44,15 +44,6 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="919.0" layoutY="32.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" stylesheets="@../Style/homepage.css" text="Kembali" textFill="WHITE">
-                     <font>
-                        <Font name="Berlin Sans FB" size="22.0" />
-                     </font>
-                     <styleClass>
-                        <String fx:value="Btn" />
-                        <String fx:value="rectangle-shadow" />
-                     </styleClass>
-                  </Button>
                </children>
             </Pane>
          </top>
@@ -71,7 +62,7 @@
          <bottom>
             <Pane prefHeight="184.0" prefWidth="1365.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="lanjutBtn" graphicTextGap="0.0" layoutX="984.0" layoutY="60.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="200.0" style="-fx-background-color: #FFB000;" stylesheets="@../Style/homepage.css" text="Lanjut" textFill="WHITE">
+                  <Button fx:id="lanjutBtn" graphicTextGap="0.0" layoutX="1060.0" layoutY="70.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="200.0" style="-fx-background-color: #FFB000;" stylesheets="@../Style/homepage.css" text="Lanjut" textFill="WHITE">
                      <font>
                         <Font name="Berlin Sans FB" size="24.0" />
                      </font>
@@ -79,6 +70,11 @@
                         <String fx:value="Btn" />
                         <String fx:value="rectangle-shadow" />
                      </styleClass>
+                  </Button>
+                  <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="54.0" layoutY="70.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="200.0" style="-fx-background-radius: 15;" styleClass="rectangle-shadow" stylesheets="@../Style/homepage.css" text="Kembali" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="22.0" />
+                     </font>
                   </Button>
                </children>
             </Pane>
