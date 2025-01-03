@@ -12,9 +12,9 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1365.0" styleClass="AnchorPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KlasifikasiController">
-    <stylesheets>
-        <URL value="@../Style/homepage.css" />
-    </stylesheets>
+   <stylesheets>
+      <URL value="@../Style/homepage.css" />
+   </stylesheets>
    <children>
       <Pane prefHeight="100.0" prefWidth="1365.0" style="-fx-background-color: #FFFFFF;" styleClass="pane">
          <children>
@@ -31,7 +31,7 @@
                <graphic>
                   <ImageView fitHeight="59.0" fitWidth="200.0">
                      <image>
-                        <Image url="@../Asset/Untitled%20design%20(15).png" />
+                        <Image url="@../Asset/Untitled design (15).png" />
                      </image>
                   </ImageView>
                </graphic></Button>
@@ -47,8 +47,8 @@
          </children>
       </Pane>
       <ScrollPane layoutY="100.0" prefHeight="645.0" prefWidth="1365.0" styleClass="AnchorPane">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="3480.0" prefWidth="1351.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="3480.0" prefWidth="1351.0">
                <children>
                   <Pane accessibleRole="TEXT" layoutX="-2.0" layoutY="-1.0" prefHeight="3492.0" prefWidth="1350.0" style="-fx-background-radius: 5;">
                      <children>
@@ -56,7 +56,7 @@
                            <children>
                               <ImageView fitHeight="207.0" fitWidth="496.0" layoutX="701.0" style="-fx-opacity: 70%;">
                                  <image>
-                                    <Image url="@../Asset/Untitled%20design%20(18).png" />
+                                    <Image url="@../Asset/Untitled design (18).png" />
                                  </image>
                               </ImageView>
                               <Text fill="#49684d" layoutX="32.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panduan mengisi pertanyaan untuk rekomendasi jenis vegetasi berdasarkan lingkungan" wrappingWidth="850.0601806640625">
@@ -154,12 +154,12 @@
                         </Text>
                         <ImageView fitHeight="192.0" fitWidth="296.0" layoutX="936.0" layoutY="931.0">
                            <image>
-                              <Image url="@../Asset/%23F0F0F0%20(1).png" />
+                              <Image url="@../Asset/#F0F0F0 (1).png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="205.0" fitWidth="317.0" layoutX="155.0" layoutY="924.0">
                            <image>
-                              <Image url="@../Asset/cahaya%20penuh.jpeg" />
+                              <Image url="@../Asset/cahaya penuh.jpeg" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="217.0" fitWidth="269.0" layoutX="604.0" layoutY="931.0">
@@ -334,7 +334,7 @@
                   </Pane>
                </children>
             </AnchorPane>
-        </content>
+         </content>
       </ScrollPane>
    </children>
 </AnchorPane>

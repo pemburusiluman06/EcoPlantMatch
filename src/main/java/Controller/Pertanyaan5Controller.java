@@ -4,7 +4,6 @@
  */
 package Controller;
 
-import Controller.Fungsi;
 import DAO.CahayaDAO;
 import DAO.CurahHujanDAO;
 import DAO.JenisTanahDAO;
@@ -17,12 +16,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Dialog;
 
 public class Pertanyaan5Controller implements Initializable {
