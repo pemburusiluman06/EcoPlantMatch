@@ -9,12 +9,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="745.0" prefWidth="1365.0" style="-fx-background-color: #FFFFFF;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StartController">
+<AnchorPane id="AnchorPane" prefHeight="745.0" prefWidth="1365.0" style="-fx-background-color: #FFFFFF;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StartController">
     <stylesheets>
         <URL value="@../Style/homepage.css" />
     </stylesheets>
    <children>
-      <Pane layoutX="61.0" layoutY="165.0" prefHeight="338.0" prefWidth="1222.0" style="-fx-background-color: #F0FFB1; -fx-background-radius: 20;" styleClass="rectangle-shadow">
+      <Pane layoutX="61.0" layoutY="165.0" prefHeight="338.0" prefWidth="1222.0" style="-fx-background-color: #efffda; -fx-background-radius: 20;" styleClass="rectangle-shadow">
          <children>
             <Text fill="#004225" layoutX="29.0" layoutY="88.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dapatkan rekomendasi vegetasi Berdasarkan lingkungan anda" wrappingWidth="985.7109375">
                <font>
@@ -32,7 +32,7 @@
             <Image url="@../Asset/petani.png" />
          </image>
       </ImageView>
-      <Pane fx:id="Pane" prefHeight="100.0" prefWidth="1365.0" style="-fx-background-color: transparent; -fx-border-color: #797979; -fx-border-width: 0 0 2 0;">
+      <Pane fx:id="Pane" prefHeight="100.0" prefWidth="1365.0" style="-fx-background-color: transparent; -fx-border-color: #F0F0F0; -fx-border-width: 0 0 4 0;">
          <children>
             <Button fx:id="startKlasifikasibtn" layoutX="1141.0" layoutY="32.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="Btn" stylesheets="@../Style/homepage.css" text="Klasifikasi" textFill="WHITE">
                <font>
