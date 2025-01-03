@@ -21,7 +21,7 @@
                   <Font name="Berlin Sans FB" size="48.0" />
                </font>
             </Text>
-            <Text fill="#004225" layoutX="29.0" layoutY="202.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Berkebun bukan lagi hal yang sulit dilakukan, dengan Ecoplantmatch anda bisa mendapatkan panduan menanam berbagai tumbuhan berdasarkan keadaan lingkungan anda" wrappingWidth="1026.7109375">
+            <Text fill="#004225" layoutX="29.0" layoutY="202.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Berkebun bukan lagi hal yang sulit dilakukan, dengan Plantmach anda bisa mendapatkan panduan menanam berbagai tumbuhan berdasarkan keadaan lingkungan anda" wrappingWidth="1026.7109375">
                <font>
                   <Font name="Berlin Sans FB" size="25.0" />
                </font>
@@ -43,7 +43,7 @@
                <graphic>
                   <ImageView fitHeight="59.0" fitWidth="200.0">
                      <image>
-                        <Image url="@../Asset/Untitled%20design%20(15).png" />
+                        <Image url="@../Asset/Untitled design (15).png" />
                      </image>
                   </ImageView>
                </graphic>

@@ -70,27 +70,7 @@ public class KlasifikasiController implements Initializable{
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         kembaliBtn.setOnAction((ActionEvent event) -> {
-            Dialog<ButtonType> dialog = new Dialog<>();
-            dialog.setTitle("EcoPlantMatch");
-            dialog.setHeaderText("Anda akan kembali ke halaman utama!");
-            dialog.setContentText("Apakah anda yakin ingin membatalkan proses ini?");
-
-            // Membuat tombol dengan teks kustom
-            ButtonType yaBtn = new ButtonType("Ya");
-            ButtonType tidakBtn = new ButtonType("Tidak");
-
-            // Menambahkan tombol ke dialog
-            dialog.getDialogPane().getButtonTypes().addAll(yaBtn, tidakBtn);
-
-            // Menangani respons pengguna
-            dialog.showAndWait().ifPresent(response -> {
-                if (response == yaBtn) {
-                    Fungsi.lastPage = "/UI/Start.fxml";
-                    Fungsi.ChangeScene(event, "/UI/Start.fxml", "EcoPlantMatch - Home");
-                } else if (response == tidakBtn) {
-                    System.out.println("You chose to Cancel!");
-                }
-            });
+            Fungsi.ChangeScene(event, Fungsi.getLastPage(), "PlantMach");
         });
 
         KlasifikasiBtn.setOnAction((ActionEvent event) -> {
