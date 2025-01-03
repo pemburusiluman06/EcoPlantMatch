@@ -17,7 +17,7 @@
         <URL value="@../Style/homepage.css" />
     </stylesheets>
     <children>
-      <ImageView fitHeight="745.0" fitWidth="1364.0" style="-fx-opacity: 70%;" styleClass="Gambar">
+      <ImageView fitHeight="745.0" fitWidth="1365.0" style="-fx-opacity: 70%;" styleClass="Gambar">
          <image>
             <Image url="@../Asset/veg1.png" />
          </image>
@@ -62,7 +62,7 @@
          <bottom>
             <Pane prefHeight="184.0" prefWidth="1365.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="lanjutBtn" graphicTextGap="0.0" layoutX="1059.0" layoutY="69.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-background-color: #FFB000;" text="Lanjut" textFill="WHITE">
+                  <Button fx:id="lanjutBtn" graphicTextGap="0.0" layoutX="1060.0" layoutY="70.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-background-color: #FFB000;" text="Lanjut" textFill="WHITE">
                      <font>
                         <Font name="Berlin Sans FB" size="24.0" />
                      </font>
@@ -71,7 +71,7 @@
                         <String fx:value="rectangle-shadow" />
                      </styleClass>
                   </Button>
-                  <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="54.0" layoutY="72.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-background-color: #FFB000;" text="Kembali" textFill="WHITE">
+                  <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="54.0" layoutY="70.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-background-color: #FFB000;" text="Kembali" textFill="WHITE">
                      <font>
                         <Font name="Berlin Sans FB" size="22.0" />
                      </font>

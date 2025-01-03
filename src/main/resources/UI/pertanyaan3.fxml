@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
@@ -16,7 +17,7 @@
         <URL value="@../Style/homepage.css" />
     </stylesheets>
    <children>
-      <ImageView fitHeight="755.0" fitWidth="1365.0" layoutY="56.0">
+      <ImageView fitHeight="755.0" fitWidth="1365.0" layoutY="56.0" style="-fx-opacity: 70%;">
          <image>
             <Image url="@../Asset/veg1.png" />
          </image>
@@ -25,10 +26,14 @@
          <top>
             <Pane prefHeight="100.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #CDCDCD; -fx-border-width: 0 0 4 0;" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="KlasifikasiBtn" layoutX="1169.0" layoutY="35.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #4a4848;" text="Klasifikasi" textFill="WHITE">
+                  <Button fx:id="KlasifikasiBtn" layoutX="1141.0" layoutY="32.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" text="Klasifikasi" textFill="WHITE">
                      <font>
-                        <Font name="Berlin Sans FB" size="14.0" />
+                        <Font name="Berlin Sans FB" size="22.0" />
                      </font>
+                     <styleClass>
+                        <String fx:value="Btn" />
+                        <String fx:value="rectangle-shadow" />
+                     </styleClass>
                   </Button>
                   <Button fx:id="homeBtn" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="200.0" style="-fx-background-color: transparent;">
                      <graphic>
@@ -38,11 +43,6 @@
                            </image>
                         </ImageView>
                      </graphic>
-                  </Button>
-                  <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="993.0" layoutY="39.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" styleClass="Btn" text="Kembali" textFill="WHITE">
-                     <font>
-                        <Font name="Berlin Sans FB" size="14.0" />
-                     </font>
                   </Button>
                </children>
             </Pane>
@@ -62,9 +62,14 @@
          <bottom>
             <Pane prefHeight="184.0" prefWidth="800.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="lanjutBtn" graphicTextGap="0.0" layoutX="600.0" layoutY="21.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" styleClass="Btn" text="Lanjut" textFill="WHITE">
+                  <Button fx:id="lanjutBtn" graphicTextGap="0.0" layoutX="1060.0" layoutY="70.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="200.0" style="-fx-background-radius: 15;" styleClass="rectangle-shadow" text="Lanjut" textFill="WHITE">
                      <font>
-                        <Font name="Berlin Sans FB" size="18.0" />
+                        <Font name="Berlin Sans FB" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="54.0" layoutY="70.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="200.0" style="-fx-background-radius: 15;" styleClass="rectangle-shadow" text="Kembali" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="22.0" />
                      </font>
                   </Button>
                </children>

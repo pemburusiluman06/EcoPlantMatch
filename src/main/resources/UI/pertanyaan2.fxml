@@ -22,7 +22,7 @@
             <Image url="@../Asset/veg1.png" />
          </image>
       </ImageView>
-      <BorderPane prefHeight="500.0" prefWidth="800.0" styleClass="AnchorPane">
+      <BorderPane prefHeight="745.0" prefWidth="1365.0" styleClass="AnchorPane">
          <top>
             <Pane prefHeight="102.0" prefWidth="1365.0" styleClass="pane" BorderPane.alignment="CENTER">
                <children>
@@ -43,15 +43,6 @@
                            </image>
                         </ImageView>
                      </graphic></Button>
-                  <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="928.0" layoutY="31.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-background-radius: 15;" text="Kembali" textFill="WHITE">
-                     <font>
-                        <Font name="Berlin Sans FB" size="22.0" />
-                     </font>
-                     <styleClass>
-                        <String fx:value="Btn" />
-                        <String fx:value="rectangle-shadow" />
-                     </styleClass>
-                  </Button>
                </children>
             </Pane>
          </top>
@@ -68,11 +59,16 @@
             </Pane>
          </center>
          <bottom>
-            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <Pane prefHeight="184.0" prefWidth="1365.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="lanjutBtn" graphicTextGap="0.0" layoutX="984.0" layoutY="60.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="200.0" style="-fx-background-radius: 15;" text="Lanjut" textFill="WHITE">
+                  <Button fx:id="lanjutBtn" graphicTextGap="0.0" layoutX="1060.0" layoutY="70.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="200.0" style="-fx-background-radius: 15;" styleClass="rectangle-shadow" text="Lanjut" textFill="WHITE">
                      <font>
-                        <Font size="24.0" />
+                        <Font name="Berlin Sans FB" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="kembaliBtn" graphicTextGap="0.0" layoutX="54.0" layoutY="70.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="200.0" style="-fx-background-radius: 15;" styleClass="rectangle-shadow" text="Kembali" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="22.0" />
                      </font>
                   </Button>
                </children>
