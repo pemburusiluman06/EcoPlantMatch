@@ -66,7 +66,7 @@
                               </Text>
                            </children>
                         </Pane>
-                        <Pane layoutX="591.0" layoutY="444.0" prefHeight="200.0" prefWidth="294.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                        <Pane layoutX="562.0" layoutY="374.0" prefHeight="200.0" prefWidth="294.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
                            <children>
                               <Text layoutX="52.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendah : 500 - 700 Mdpl">
                                  <font>
@@ -90,7 +90,7 @@
                               </Text>
                            </children>
                         </Pane>
-                        <Pane layoutX="185.0" layoutY="444.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                        <Pane layoutX="164.0" layoutY="374.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
                            <children>
                               <Text layoutX="84.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panas : 30 - 38 °C">
                                  <font>
@@ -116,7 +116,7 @@
                               </Text>
                            </children>
                         </Pane>
-                        <Pane layoutX="952.0" layoutY="444.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
+                        <Pane layoutX="934.0" layoutY="374.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
                            <children>
                               <Text layoutX="51.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sedang (200 - 300 mm)">
                                  <font>
@@ -176,11 +176,6 @@
                               </Text>
                            </children>
                         </Pane>
-                        <ImageView fitHeight="627.0" fitWidth="1114.0" layoutX="152.0" layoutY="1306.0">
-                           <image>
-                              <Image url="@../../../../../../OneDrive/Dokumen/sispak%20baru/demo/src/main/resources/com/example/demo/asset/jenis-tanah-menurut-klasifikasi-usda-03.jpg" />
-                           </image>
-                        </ImageView>
                         <Pane layoutX="559.0" layoutY="2003.0" prefHeight="67.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" styleClass="rectangle-shadow">
                            <children>
                               <Text fill="#542828" layoutX="33.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daftar Tanaman" textAlignment="CENTER" wrappingWidth="226.13671875">
@@ -330,6 +325,11 @@
                               </ImageView>
                            </children>
                         </Pane>
+                        <ImageView fitHeight="591.0" fitWidth="1056.0" layoutX="144.0" layoutY="1334.0">
+                           <image>
+                              <Image url="@../Asset/jenis-tanah-menurut-klasifikasi-usda-03.jpg" />
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
                </children>
